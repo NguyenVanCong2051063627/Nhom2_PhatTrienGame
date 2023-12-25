@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class RubyControll : MonoBehaviour
 {
     public float speed = 3f;
-    GameObject projectilePrefab;
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
     bool isInvincible;
@@ -16,7 +16,9 @@ public class RubyControll : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
+      public AudioClip collectedClip;
     Animator animator;
+    AudioSource audioSource;
     Vector2 lookDirection = new Vector2(1, 0);
     // Start is called before the first frame update
     void Start()
@@ -26,8 +28,10 @@ public class RubyControll : MonoBehaviour
 
         currentHealth = maxHealth;
 
-    }
+        audioSource = GetComponent<AudioSource>();
 
+    }
+ 
     // Update is called once per frame
     void Update()
     {
@@ -40,6 +44,7 @@ public class RubyControll : MonoBehaviour
         {
             lookDirection.Set(move.x, move.y);
             lookDirection.Normalize();
+            
         }
 
         animator.SetFloat("Look X", lookDirection.x);
@@ -52,7 +57,21 @@ public class RubyControll : MonoBehaviour
             if (invincibleTimer < 0)
                 isInvincible = false;
         }
-      
+        
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
+
+            if (hit.collider != null)
+            {
+                Talk character = hit.collider.GetComponent<Talk>();
+                if (character != null)
+                {
+                    character.DisplayDialog();
+                }
+            }
+
+        }
     }
     void FixedUpdate()
     {
@@ -72,6 +91,8 @@ public class RubyControll : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
+            PlaySound(collectedClip);
+            
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
@@ -80,7 +101,11 @@ public class RubyControll : MonoBehaviour
 
 
     }
-   
+       public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
+    }
+
 
 
 }
