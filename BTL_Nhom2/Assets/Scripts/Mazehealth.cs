@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Mazehealth : MonoBehaviour
 {
+       public AudioClip collectedClip;
     void OnTriggerEnter2D(Collider2D other)
 {
     RubyControll controller = other.GetComponent<RubyControll>();
@@ -11,6 +12,7 @@ public class Mazehealth : MonoBehaviour
     if (controller != null)
     {
         Destroy(gameObject);
+          controller.PlaySound(collectedClip);
     }
 }
     // Start is called before the first frame update

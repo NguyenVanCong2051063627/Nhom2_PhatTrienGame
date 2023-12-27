@@ -113,10 +113,10 @@ TextureImporter:
       name: GrassSmall_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 66.66667
-        width: 42.666668
-        height: 33.333332
+        x: 2
+        y: 4
+        width: 126
+        height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,174 +126,6 @@ TextureImporter:
       bones: []
       spriteID: 3788025957c12db43adcc2992ffd64f8
       internalID: 848885303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GrassSmall_1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 66.66667
-        width: 42.666668
-        height: 33.333332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cf1be5140fd7714299495e748708ffb
-      internalID: -364767660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GrassSmall_2
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 66.66667
-        width: 42.666668
-        height: 33.333332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0258b8b30b4f92f4488efdf971f8b3de
-      internalID: 329889619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GrassSmall_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 33.666668
-        width: 42.666668
-        height: 33.333332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 184e7f7df6bbcfc40a35794d5da63154
-      internalID: 2074079815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GrassSmall_4
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 33.666668
-        width: 42.666668
-        height: 33.333332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b924bef999c59e43ab68279e8c72443
-      internalID: -1270148447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GrassSmall_5
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 33.666668
-        width: 42.666668
-        height: 33.333332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3cc7083b2f6be5f43bdef25d18783f98
-      internalID: 1827821243
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GrassSmall_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0.66666794
-        width: 42.666668
-        height: 33.333332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d985600004e34254d89a9bbc06efbb6b
-      internalID: -738584152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GrassSmall_7
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 0.66666794
-        width: 42.666668
-        height: 33.333332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09f4c77f41f40174184a884f3032a6fb
-      internalID: 1831156466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GrassSmall_8
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 0.66666794
-        width: 42.666668
-        height: 33.333332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afe426561061ab547802311de301c786
-      internalID: -337035026
       vertices: []
       indices: 
       edges: []
@@ -310,14 +142,6 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       GrassSmall_0: 848885303
-      GrassSmall_1: -364767660
-      GrassSmall_2: 329889619
-      GrassSmall_3: 2074079815
-      GrassSmall_4: -1270148447
-      GrassSmall_5: 1827821243
-      GrassSmall_6: -738584152
-      GrassSmall_7: 1831156466
-      GrassSmall_8: -337035026
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
