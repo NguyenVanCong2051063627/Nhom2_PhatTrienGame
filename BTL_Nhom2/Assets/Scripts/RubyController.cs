@@ -16,7 +16,8 @@ public class RubyControll : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
-      public AudioClip collectedClip;
+      public AudioClip Rubyhit;
+      public AudioClip complete;
     Animator animator;
     AudioSource audioSource;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -68,6 +69,7 @@ public class RubyControll : MonoBehaviour
                 if (character != null)
                 {
                     character.DisplayDialog();
+                   PlaySound(complete);
                 }
             }
 
@@ -91,7 +93,7 @@ public class RubyControll : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
-            PlaySound(collectedClip);
+            PlaySound(Rubyhit);
             
         }
 
