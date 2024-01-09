@@ -5,30 +5,32 @@ using UnityEngine;
 
 public class health : MonoBehaviour
 {
-  
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+     public AudioClip collectedClip;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-      void OnTriggerEnter2D(Collider2D other)
-   {
-        RubyControll controller = other.GetComponent<RubyControll>();
-
-    if (controller != null)
+     // Start is called before the first frame update
+     void Start()
      {
-          if(controller.health < controller.maxHealth)
+
+     }
+
+     // Update is called once per frame
+     void Update()
+     {
+
+     }
+     void OnTriggerEnter2D(Collider2D other)
+     {
+          RubyControll controller = other.GetComponent<RubyControll>();
+
+          if (controller != null)
           {
-	       controller.ChangeHealth(1);
-	       Destroy(gameObject);
+               if (controller.health < controller.maxHealth)
+               {
+                    controller.ChangeHealth(1);
+                    Destroy(gameObject);
+                    controller.PlaySound(collectedClip);
+               }
           }
      }
-   }
 }
 
