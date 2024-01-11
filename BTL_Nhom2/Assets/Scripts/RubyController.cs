@@ -115,7 +115,7 @@ public class RubyControll : MonoBehaviour
      void LoadGameOverScene()
     {
         // Gọi hàm LoadScene để chuyển đến màn hình game over
-        SceneManager.LoadScene("EndGame");
+        SceneManager.LoadScene("GameOver");
     }
        public void PlaySound(AudioClip clip)
     {
