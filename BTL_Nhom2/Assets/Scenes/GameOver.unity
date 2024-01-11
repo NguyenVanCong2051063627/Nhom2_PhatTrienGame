@@ -339,7 +339,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tho\xE1t"
+  m_Text: "Quay l\u1EA1i\n"
 --- !u!222 &1146414171
 CanvasRenderer:
   m_ObjectHideFlags: 0
