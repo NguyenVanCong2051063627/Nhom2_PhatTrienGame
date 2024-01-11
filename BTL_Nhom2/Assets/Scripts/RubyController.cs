@@ -98,10 +98,24 @@ public class RubyControll : MonoBehaviour
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        if (currentHealth <= 0)
+        {
+            // Dừng game
+            Time.timeScale = 0f;
+
+            // Gọi hàm xử lý khi game over (nếu cần)
+             LoadGameOverScene();
+        }
+    
 
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
 
 
+    }
+     void LoadGameOverScene()
+    {
+        // Gọi hàm LoadScene để chuyển đến màn hình game over
+        SceneManager.LoadScene("EndGame");
     }
        public void PlaySound(AudioClip clip)
     {

@@ -19,11 +19,14 @@ EditorBuildSettings:
     guid: 736bd79daeadaaa4fa20e00c3aa781a3
   - enabled: 1
     path: Assets/Scenes/Map4.unity
-    guid: 6351203319fc4134f93be9f26d7544f9
+    guid: 2a5e12e18a32c084db50a6a673917705
   - enabled: 1
     path: Assets/Scenes/Map5.unity
-    guid: 4b8a1162fc17c2a42a143816f36c764a
+    guid: 1a976de6fd71cfe4b952e570d054975b
   - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: e51a19237cd1fba40af38c28c25199f5
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 8f7640a010bf86f48850dba48dd3243f
   m_configObjects: {}
